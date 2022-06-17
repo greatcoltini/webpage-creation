@@ -23,12 +23,13 @@ html {
  /* Styling for the header */
 h1 {
 	float: centre;
-	color: white;
 	margin: auto;
-	width: 60%;
+	width: 60.5%;
 	background: #333;
 	text-align: center;
 	font-size: 3vw;
+	color: white;
+    text-shadow: 2px 2px 4px #000000;
 }
 
  /* Paragraph Stylization */
@@ -37,9 +38,10 @@ p {
 	margin: auto;
 	width: 60%;
 	text-align: center;
-	font-size: 1vw;
+	font-size: 2vw;
 	border-style: solid;
-	border-color: #71797E
+	border-color: #71797E;
+	display:table;
 }
 
  /* The navigation bar */
@@ -71,8 +73,27 @@ p {
 /* Main content */
 .main {
   margin-top: 50px; /* Add a top margin to avoid content overlay */
+  display:table;
 } 
 
+/* Table formatting */
+table {
+	border-collapse: collapse;
+	width: 60.5%;
+	display: block;
+	margin-left: 19.35vw;
+}
+
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(odd) {
+  background-color: #dddddd;
+}
 
 </style>
 
@@ -94,9 +115,53 @@ p {
 <div class="main">
 	<h1 class="title">ABOUT ME</h1>
   <p>Some text some text some text some text..<br>
-  This is an outline of the progress in my life<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+  This is an outline of the progress in my life<br>
+  <br><br>I am a graduate from the University of Toronto, with
+  a bachelors of science degree. 
+  For my degree, I studied Psychology, Mathematics,
+  and Computer Science. My specialty in programming is with Python, Java,
+  and C. <br> <br> 
+  
+  Currently, I am working in the water treatment industry as a
+  water treatment operator at a Class Three plant for the 
+  Six Nations of the Grand River.<br>
+
+   
+  <iframe src="https://gifer.com/embed/28QH" width="10%" height="10%" style='transform:rotateY(180deg);margin-left:-50vw;' frameBorder="10" allowFullScreen></iframe>
+  
+      <table id="WRKEXP">
+	<tr>
+		<th> Company </th>
+		<th> Job Title </th>
+		<th> Job Description </th>
+	</tr>
+	<tr>
+		<td> Six Nations of the Grand River </td>
+		<td> Assistant Water Treatment Operator </td>
+		<td> - Managing and treatment of a Class 3 Water Plant
+		<br> - Operating and Maintaining all of the treatment processes:
+		<br>	- Membrane Filtration skids (x2)
+		<br>	- Biologically Activated Carbon tanks (x2)
+		<br>	- TrojanUV Reactors
+		<br>	- Chemical Feed pumps (for Polyaluminum Chloride and Sodium Hypochloride)
+		<br> - Advanced problem-solving and troubleshooting skills; key to quickly
+		and competently resolve problems within the plant
+		<br> - Attention to detail; ensuring that all systems within the plant were running
+		properly where some systems may not have explicit warnings (i.e. pumping stations) </td>
+	</tr>
+	<tr>
+		<td> Telus International </td>
+		<td> Mapping Analyst </td>
+		<td> - Cleaning data generated from AI with regards to mapping software
+		<br> - Comparing results from user-generated queries to guidelines to ensure
+		that AI was successfully parsing the user input
+		</td>
+   </table>
+   
   </p>
+  
+    
+
   
 </div> 
 

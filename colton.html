@@ -30,6 +30,7 @@ h1 {
 	font-size: 3vw;
 	color: white;
     text-shadow: 2px 2px 4px #000000;
+	margin-top: 3vw;
 }
 
 /* Styling for Title Header */
@@ -57,6 +58,10 @@ p {
   width: 100%; /* Full width */
   margin-left: -8px;
   z-index: 1;
+}
+
+navbar-spacing {
+	margin-left: -30px;
 }
 
 /* Links inside the navbar */
@@ -128,7 +133,7 @@ tr:nth-child(n+4) {
 <body>
 
 <div class="navbar">
-  <a href="#HOME" onclick="topFunction()">HOME</a>
+  <a href="#HOME" onclick="topFunction()" style='margin-left: 30vw;'>HOME</a>
   <a href="#RESUME">RESUME</a>
   <a href="#PROJECT">PROJECTS</a>
   <a href="#WRKEXP">WORK EXPERIENCE</a>
@@ -139,20 +144,23 @@ tr:nth-child(n+4) {
 <div class="main">
 	<h1 class="title">ABOUT ME</h1>
   <p>Some text some text some text some text..<br>
-  This is an outline of the progress in my life<br>
-  <br><br>I am a graduate from the University of Toronto, with
-  a bachelors of science degree. 
-  For my degree, I studied Psychology, Mathematics,
-  and Computer Science. My specialty in programming is with Python, Java,
-  and C. <br> <br> 
+  <br> I am a 25 year old graduate from the University of Toronto, with
+  a Bachelors of Science degree. I studied Computer Science, Mathematics,
+  and Psychology. 
   
-  Currently, I am working in the water treatment industry as a
+  <br> <br> Throughout my young adulthood I busied myself with programming and creating
+  modifications for several games (starting off in my early teens with editing
+  sprites for Starcraft, moving on to creating and editing JSON files in Stonehearth
+  and making simple mods for Minecraft).
+  
+  <br> <br> Currently, I am working in the water treatment industry as a
   water treatment operator at a Class Three plant for the 
   Six Nations of the Grand River.<br>
 
    
   <iframe src="https://gifer.com/embed/28QH" width="10%" height="10%" style='transform:rotateY(180deg);margin-left:-50vw;' frameBorder="10" allowFullScreen></iframe>
   
+	<h1 class="header-work">WORK EXPERIENCE </h1>
       <table id="WRKEXP">
 	<tr>
 		<th> Company </th>
@@ -190,6 +198,45 @@ tr:nth-child(n+4) {
 		</td>
 	</tr>
    </table>
+   
+   <h1 class="header-education">EDUCATION </h1>
+   <table id="EDU">
+   <tr>
+		<th> SCHOOL </th>
+		<th> EDUCATION </th>
+		<th> SPECIFIC INFORMATION </th>
+	</tr>
+	<tr>
+		<td> UNIVERSITY OF TORONTO </td>
+		<td> BACHELORS OF SCIENCE </td>
+		<td> - studied Computer Science
+		<blockquote> - Object-Oriented programmming with Java 
+				<br> - Classes and understanding structs with C
+				<br> - Experience programming in Linux and MacOS
+				<br> - Experience with Assembly and low-level language programming
+				<br> - Programming Algorithms with Python
+				<br> - Logic-based programming in C 
+		</blockquote>
+			<br> - studied Psychology
+		<blockquote>
+		</blockquote>
+			<br> - studied Mathematics
+		<blockquote>
+				- Topography
+			<br> - Discrete Mathematics (i.e. Linear Algebra)
+			<br> - Problem-solving with Proofs
+			<br> - Multi-variable Calculus
+		</blockquote>
+		</td>
+	</tr>
+	<tr>
+		<th> HARVARD </td>
+		<th> CERTIFICATION IN INTRO TO COMPUTER SCIENCE </th>
+		<th> - coursework in basic computer science application and theory </th>
+	</tr>
+	</td>
+	</table>
+   
    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   </p>
   

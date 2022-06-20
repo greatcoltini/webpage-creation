@@ -32,6 +32,10 @@ h1 {
     text-shadow: 2px 2px 4px #000000;
 }
 
+/* Styling for Title Header */
+title {
+}
+
  /* Paragraph Stylization */
 p {
 	color: #71797E;
@@ -82,6 +86,12 @@ table {
 	width: 60.5%;
 	display: block;
 	margin-left: 19.35vw;
+	
+	scroll-margin-block-start: 110px;
+  /*Adds margin to the top of the viewport*/
+  
+  scroll-margin-block-end: 110pxx;
+  /*Adds margin to the bottom of the viewport*/
 }
 
 
@@ -91,8 +101,21 @@ td, th {
   padding: 8px;
 }
 
-tr:nth-child(odd) {
-  background-color: #dddddd;
+th {
+	font-family: Arial, Helvetica, sans-serif;
+	border: 3px solid black;
+}
+
+tr:nth-child(2) {
+  background-color: #00994d;
+}
+
+tr:nth-child(3) {
+  background-color: #008040;
+}
+
+tr:nth-child(n+4) {
+  background-color: #3d3d5c;
 }
 
 </style>
@@ -103,8 +126,8 @@ tr:nth-child(odd) {
 
 <body>
 
-<div class="navbar" id="HOME">
-  <a href="#HOME">HOME</a>
+<div class="navbar">
+  <a href="#HOME" onclick="topFunction()">HOME</a>
   <a href="#RESUME">RESUME</a>
   <a href="#PROJECT">PROJECTS</a>
   <a href="#WRKEXP">WORK EXPERIENCE</a>
@@ -113,7 +136,7 @@ tr:nth-child(odd) {
 
 
 <div class="main">
-	<h1 class="title">ABOUT ME</h1>
+	<h1 class="title" id="HOME">ABOUT ME</h1>
   <p>Some text some text some text some text..<br>
   This is an outline of the progress in my life<br>
   <br><br>I am a graduate from the University of Toronto, with
@@ -156,8 +179,17 @@ tr:nth-child(odd) {
 		<br> - Comparing results from user-generated queries to guidelines to ensure
 		that AI was successfully parsing the user input
 		</td>
+	</tr>
+	<tr>
+		<td> Ontario Filter </td>
+		<td> Machine Operator </td>
+		<td> - Maintainenance and Operation of steel cutting machine
+		<br> - Usage of forklift to move piping materials (20ft bundles)
+		<br> - Stock tracking
+		</td>
+	</tr>
    </table>
-   
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   </p>
   
     
@@ -182,6 +214,16 @@ tr:nth-child(odd) {
 <script>
     // or enable responsive functionality:
     GitHubCalendar(".calendar", "greatcoltini", { responsive: true });
+</script>
+
+<script>
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+} 
+
 </script>
 
 

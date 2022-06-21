@@ -52,12 +52,14 @@ p {
  /* The navigation bar */
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(51,51,51,1) 71%);
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
   margin-left: -8px;
   z-index: 1;
+  border-bottom: 4px solid black;
+  font-size: 1.25vw;
 }
 
 navbar-spacing {
@@ -70,12 +72,21 @@ navbar-spacing {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 1vw 1vw;
   text-decoration: none;
 }
 
+.navbar a.BTN {
+  float: right;
+}
+
+.navbar a.NAME {
+  font-size: 1.5vw;
+  padding: 1vw 1vw;
+}
+
 /* Change background on mouse-over */
-.navbar a:hover {
+.navbar a.BTN:hover {
   background: #ddd;
   color: black;
 }
@@ -100,6 +111,33 @@ table {
   /*Adds margin to the bottom of the viewport*/
 }
 
+.socials {
+  display: block;
+  position: relative;
+  margin-left: 39vw;
+  float: left;
+}
+
+.socials_links {
+  position: relative;
+}
+
+.socials_links .image-hover {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      opacity: 0;
+      transition: opacity .2s;
+ }
+	
+.socials_links:hover .image {
+  opacity: 0;
+}
+.socials_links:hover .image-hover {
+  opacity: 1;
+}
 
 td, th {
   border: 1px solid #dddddd;
@@ -138,11 +176,12 @@ tr:nth-child(n+4) {
 <body>
 
 <div class="navbar">
-  <a href="#HOME" onclick="topFunction()" style='margin-left: 30vw;'>HOME</a>
-  <a href="resume.docx" download="colton_resume">RESUME</a>
-  <a href="#PROJECT">PROJECTS</a>
-  <a href="#WRKEXP">WORK EXPERIENCE</a>
-  <a href="#GITHUB">GITHUB</a>
+  <a class="NAME"> COLTON DONKERSGOED </a>
+  <a class="BTN" href="resume.docx" download="colton_resume">RESUME </a>
+  <a class="BTN" href="#PROJECT">PROJECTS</a>
+  <a class="BTN" href="#GITHUB">GITHUB</a>
+  <a class="BTN" href="#WRKEXP">WORK EXPERIENCE</a>
+  <a class="BTN" href="#HOME" onclick="topFunction()">HOME</a>
 </div>
 
 
@@ -255,13 +294,8 @@ tr:nth-child(n+4) {
 	<br><br><br><br><br><br><br><br><br><br><br><br><br>
 		</tr>
 	</table>
-   
-   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   </p>
   
-  
-    
-
   
 </div> 
 
@@ -277,6 +311,23 @@ tr:nth-child(n+4) {
 <div class="calendar" id="GITHUB">
     <!-- Loading stuff -->
     Loading the data just for you.
+</div>
+
+<div class="socials"> 
+	<a class="socials_links" href="https://github.com/greatcoltini">
+		<img class="image" src="githubico.png" alt="GitHub" style="height: 5%; width: 5%;">
+		<img class="image-hover" src="githubicohov.png" alt="GitHub" style="height: 5%; width: 5%;">
+	</a>
+	<a class="socials_links" href="https://instagram.com/greatcoltini">
+		<img src="greyinstaico.png" alt="Instagram" style="height: 5%; width: 5%;">
+	</a>
+	<a class="socials_links" href="https://www.linkedin.com/in/colton-donkersgoed/">
+		<img src="greylinkedinico.jpg" alt="Indeed" style="height: 5%; width: 5%;">
+	</a>
+	<a class="socials_links" href="https://www.facebook.com/colton.donkersgoed">
+		<img src="greyfbico.png" alt="Facebook" style="height: 5%; width: 5%;">
+	</a>
+	
 </div>
 
 <script>

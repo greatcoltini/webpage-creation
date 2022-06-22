@@ -15,6 +15,13 @@
 
 <style>
 
+/* INTRODUCE FOOTER */
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
  /* OTHER STYLE CHOICES */
 html {
 	scroll-behavior: smooth;
@@ -46,7 +53,6 @@ p {
 	font-size: 2vw;
 	border-style: solid;
 	border-color: #71797E;
-	display:table;
 }
 
  /* The navigation bar */
@@ -122,25 +128,16 @@ table {
   position: relative;
 }
 
-.socials_links .image-hover {
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      opacity: 0;
-      transition: opacity .2s;
+.socials_links .image {
+      transition: opacity .5s;
  }
 	
 .socials_links:hover .image {
-  opacity: 0;
-}
-.socials_links:hover .image-hover {
-  opacity: 1;
+  opacity: 0.3;
 }
 
 td, th {
-  border: 1px solid #dddddd;
+  border: 2px solid black;
   text-align: left;
   padding: 8px;
 }
@@ -150,16 +147,24 @@ th {
 	border: 3px solid black;
 }
 
-tr:nth-child(2) {
+.WRKTBL tr:nth-child(2) {
   background-color: #00994d;
 }
 
-tr:nth-child(3) {
+.WRKTBL tr:nth-child(3) {
   background-color: #008040;
 }
 
-tr:nth-child(n+4) {
+.WRKTBL tr:nth-child(n+4) {
   background-color: #3d3d5c;
+}
+
+.EDUTBL tr:nth-child(2) {
+  background-color: #00994d;
+}
+
+.EDUTBL tr:nth-child(n+3) {
+  background-color: #8e8818;
 }
 
 .row_proj {
@@ -179,15 +184,15 @@ tr:nth-child(n+4) {
   <a class="NAME"> COLTON DONKERSGOED </a>
   <a class="BTN" href="resume.docx" download="colton_resume">RESUME </a>
   <a class="BTN" href="#PROJECT">PROJECTS</a>
-  <a class="BTN" href="#GITHUB">GITHUB</a>
+  <a class="BTN" href="#EDU"> EDUCATION </a>
   <a class="BTN" href="#WRKEXP">WORK EXPERIENCE</a>
   <a class="BTN" href="#HOME" onclick="topFunction()">HOME</a>
 </div>
 
 
 <div class="main">
-	<h1 class="title">ABOUT ME</h1>
-  <p>Some text some text some text some text..<br>
+	<h1 class="title"> <img src="header.png" style="object-fit: none; left: -9.5vw; position: relative;"></h1>
+  <p>
   <br> I am a 25 year old graduate from the University of Toronto, with
   a Bachelors of Science degree. I studied Computer Science, Mathematics,
   and Psychology. 
@@ -197,15 +202,19 @@ tr:nth-child(n+4) {
   sprites for Starcraft, moving on to creating and editing JSON files in Stonehearth
   and making simple mods for Minecraft).
   
-  <br> <br> Currently, I am working in the water treatment industry as a
-  water treatment operator at a Class Three plant for the 
-  Six Nations of the Grand River.<br>
+  
 
-   
+  
+  <br> <br> Currently, I am working in the water treatment industry as a
+  water treatment operator at a Class III plant for the 
+  Six Nations of the Grand River.
+  
+  <br> <br> 
+  
   <iframe src="https://gifer.com/embed/28QH" width="10%" height="10%" style='transform:rotateY(180deg);margin-left:-50vw;' frameBorder="10" allowFullScreen></iframe>
   
 	<h1 class="header-work">WORK EXPERIENCE </h1>
-      <table id="WRKEXP">
+      <table id="WRKEXP" class="WRKTBL">
 	<tr>
 		<th> Company </th>
 		<th> Job Title </th>
@@ -244,7 +253,7 @@ tr:nth-child(n+4) {
    </table>
    
    <h1 class="header-education">EDUCATION</h1>
-   <table id="education">
+   <table id="education" class="EDUTBL">
    <tr>
 		<th> SCHOOL </th>
 		<th> EDUCATION </th>
@@ -262,7 +271,11 @@ tr:nth-child(n+4) {
 				<br> - Logic-based programming in C 
 		</blockquote>
 			<br> - studied Psychology
-		<blockquote>
+		<blockquote> - Abnormal Psychology
+				<br> - Psychology and the Law
+				<br> - Cognitive Disorders in Psychology
+				<br> - Biopsychology of Sex
+				<br> - Psychology of Speech
 		</blockquote>
 			<br> - studied Mathematics
 		<blockquote>
@@ -274,15 +287,14 @@ tr:nth-child(n+4) {
 		</td>
 	</tr>
 	<tr>
-		<th> HARVARD - IN PROGRESS </td>
-		<th> CERTIFICATION IN INTRO TO COMPUTER SCIENCE </th>
-		<th> - Coursework in basic computer science application and theory </th>
+		<td rowspan="2"> HARVARD - IN PROGRESS </td>
+		<td> CERTIFICATION IN INTRO TO COMPUTER SCIENCE </td>
+		<td> - Coursework in basic computer science application and theory </td>
 	</tr>
 	<tr>
-		<th> HARVARD - IN PROGRESS</th>
-		<th> CERTIFICATION IN MACHINE LEARNING AND AI</th>
-		<th> - Training with Python in regards to machine learning, artificial intelligence
-		<br> - Specifically attacks concepts and algorithms at the foundation of modern AI</th>
+		<td> CERTIFICATION IN MACHINE LEARNING AND AI</td>
+		<td> - Training with Python in regards to machine learning, artificial intelligence
+		<br><br> - Specifically attacks concepts and algorithms at the foundation of modern AI</td>
 	</tr>
 	</table>
    
@@ -291,7 +303,8 @@ tr:nth-child(n+4) {
 	<table>
 		<tr class="row_proj"> 
 			<th> Hello </th>
-	<br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<th> Description </th>
+			<th> Link to Project </th>
 		</tr>
 	</table>
   </p>
@@ -313,21 +326,24 @@ tr:nth-child(n+4) {
     Loading the data just for you.
 </div>
 
-<div class="socials"> 
-	<a class="socials_links" href="https://github.com/greatcoltini">
-		<img class="image" src="githubico.png" alt="GitHub" style="height: 5%; width: 5%;">
-		<img class="image-hover" src="githubicohov.png" alt="GitHub" style="height: 5%; width: 5%;">
-	</a>
-	<a class="socials_links" href="https://instagram.com/greatcoltini">
-		<img src="greyinstaico.png" alt="Instagram" style="height: 5%; width: 5%;">
-	</a>
-	<a class="socials_links" href="https://www.linkedin.com/in/colton-donkersgoed/">
-		<img src="greylinkedinico.jpg" alt="Indeed" style="height: 5%; width: 5%;">
-	</a>
-	<a class="socials_links" href="https://www.facebook.com/colton.donkersgoed">
-		<img src="greyfbico.png" alt="Facebook" style="height: 5%; width: 5%;">
-	</a>
-	
+<div class="footer">
+	<footer>
+	<div class="socials"> 
+		<a class="socials_links" href="https://github.com/greatcoltini">
+			<img class="image" src="githubicohov.png" alt="GitHub" style="height: 5%; width: 5%;">
+		</a>
+		<a class="socials_links" href="https://instagram.com/greatcoltini">
+			<img class="image" src="greyinstaico.png" alt="Instagram" style="height: 5%; width: 5%;">
+		</a>
+		<a class="socials_links" href="https://www.linkedin.com/in/colton-donkersgoed/">
+			<img class="image" src="greylinkedinico.png" alt="Indeed" style="height: 5%; width: 5%;">
+		</a>
+		<a class="socials_links" href="https://www.facebook.com/colton.donkersgoed">
+			<img class="image" src="greyfbico.png" alt="Facebook" style="height: 5%; width: 5%;">
+		</a>
+		
+	</div>
+	</footer>
 </div>
 
 <script>

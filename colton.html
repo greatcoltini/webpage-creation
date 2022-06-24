@@ -122,11 +122,9 @@ table {
 	width: 60.5%;
 	display: block;
 	margin-left: 19.35vw;
-	
-	scroll-margin-block-start: 110px;
+	scroll-margin-block-start: 10vw;
   /*Adds margin to the top of the viewport*/
-  
-  scroll-margin-block-end: 110pxx;
+	scroll-margin-block-end: 10vw;
   /*Adds margin to the bottom of the viewport*/
 }
 
@@ -140,6 +138,7 @@ table {
 .socials_links {
   position: relative;
   padding-left: 5%;
+  text-decoration: none;
 }
 
 .socials_links .image {
@@ -163,6 +162,13 @@ th {
 	border: 3px solid black;
 }
 
+.WRKTBL {
+	scroll-margin-block-start: 10vw;
+  /*Adds margin to the top of the viewport*/
+	scroll-margin-block-end: 10vw;
+  /*Adds margin to the bottom of the viewport*/
+}
+
 .WRKTBL tr:nth-child(2) {
   background-color: #00994d;
   object-fit: scale-down;
@@ -170,6 +176,13 @@ th {
 
 .WRKTBL tr:nth-child(n+3) {
   background-color: #3d3d5c;
+}
+
+.EDUTBL {
+	scroll-margin-block-start: 10vw;
+  /*Adds margin to the top of the viewport*/
+	scroll-margin-block-end: 10vw;
+  /*Adds margin to the bottom of the viewport*/
 }
 
 .EDUTBL tr:nth-child(2) {
@@ -271,8 +284,8 @@ th {
 	</tr>
    </table>
    
-   <h1 class="header-education" id="EDU">EDUCATION</h1>
-   <table id="education" class="EDUTBL">
+   <h1 class="header-education">EDUCATION</h1>
+   <table id="EDU" class="EDUTBL">
    <tr>
 		<th> SCHOOL </th>
 		<th> EDUCATION </th>
@@ -318,8 +331,8 @@ th {
 	</table>
    
    
-   <h1 id="PROJECT"> PROJECTS </h1>
-	<table>
+   <h1> PROJECTS </h1>
+	<table id="PROJECT">
 		<tr class="row_proj"> 
 			<th> TITLE </th>
 			<th> DESCRIPTION </th>
@@ -337,6 +350,7 @@ th {
 			<td> <a href="colton.html" target="_blank"> My Website </a> </td>
 		</tr>
 	</table>
+	<br><br>
   </p>
   
   

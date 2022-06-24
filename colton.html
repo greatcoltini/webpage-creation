@@ -19,8 +19,8 @@
 footer {
   overflow: hidden;
   background: grey;
-  position: relative; /* Set the navbar to fixed position */
-  bottom: -0.5vw; /* Position the navbar at the top of the page */
+  position: relative; /* Set the bar to fixed position */
+  bottom: -0.5vw; /* Position the navbar at the bottom of the page */
   width: 101%; /* Full width */
   margin-left: -0.5vw;
   z-index: 1;
@@ -58,6 +58,17 @@ p {
 	font-size: 2vw;
 	border-style: solid;
 	border-color: #71797E;
+}
+
+.copyright-info {
+	margin: auto;
+	text-align: center;
+	font-size: 1vw;
+	margin-left: 8vw;
+	padding: 0 0 0 0;
+	position: relative;
+	left: -4vw;
+	top: -1vw;
 }
 
  /* The navigation bar */
@@ -125,12 +136,13 @@ table {
 .socials {
   display: block;
   position: relative;
-  margin-left: 39vw;
+  margin-left: 30vw;
   float: left;
 }
 
 .socials_links {
   position: relative;
+  padding-left: 5%;
 }
 
 .socials_links .image {
@@ -145,15 +157,18 @@ td, th {
   border: 2px solid black;
   text-align: left;
   padding: 8px;
+  font-size: 1.5vw;
 }
 
 th {
 	font-family: Arial, Helvetica, sans-serif;
+	font-size: 2vw;
 	border: 3px solid black;
 }
 
 .WRKTBL tr:nth-child(2) {
   background-color: #00994d;
+  object-fit: scale-down;
 }
 
 .WRKTBL tr:nth-child(3) {
@@ -196,7 +211,7 @@ th {
 
 
 <div class="main">
-	<h1 class="title"> <img src="header.png" style="object-fit: none; left: -9.5vw; position: relative;"></h1>
+	<h1 class="title"> <img src="header.png" style="object-fit: scale-down; left: -9.5vw; position: relative; width: 100%; ;"></h1>
   <p>
   <br> I am a 25 year old graduate from the University of Toronto, with
   a Bachelors of Science degree. I studied Computer Science, Mathematics,
@@ -206,9 +221,8 @@ th {
   modifications for several games (starting off in my early teens with editing
   sprites for Starcraft, moving on to creating and editing JSON files in Stonehearth
   and making simple mods for Minecraft).
+  <img src="sc_art.jpg" style="object-fit: scale-down; height:10%; width: 10%; position: relative;";>
   
-  
-
   
   <br> <br> Currently, I am working in the water treatment industry as a
   water treatment operator at a Class III plant for the 
@@ -229,20 +243,25 @@ th {
 		<td> Six Nations of the Grand River </td>
 		<td> Assistant Water Treatment Operator </td>
 		<td> - Managing and treatment of a Class 3 Water Plant
+		<br>
 		<br> - Operating and Maintaining all of the treatment processes:
+		<blockquote>
 		<br>	- Membrane Filtration skids (x2)
 		<br>	- Biologically Activated Carbon tanks (x2)
 		<br>	- TrojanUV Reactors
 		<br>	- Chemical Feed pumps (for Polyaluminum Chloride and Sodium Hypochloride)
+		</blockquote>
 		<br> - Advanced problem-solving and troubleshooting skills; key to quickly
-		and competently resolve problems within the plant
-		<br> - Attention to detail; ensuring that all systems within the plant were running
+		and competently resolving problems within the plant
+		<br>
+		<br> - Attention to detail; ensuring that all systems within the plant and distribution are running
 		properly where some systems may not have explicit warnings (i.e. pumping stations) </td>
 	</tr>
 	<tr>
 		<td> Telus International </td>
 		<td> Mapping Analyst </td>
 		<td> - Cleaning data generated from AI with regards to mapping software
+		<br>
 		<br> - Comparing results from user-generated queries to guidelines to ensure
 		that AI was successfully parsing the user input
 		</td>
@@ -251,13 +270,15 @@ th {
 		<td> Ontario Filter </td>
 		<td> Machine Operator </td>
 		<td> - Maintainenance and Operation of steel cutting machine
+		<br>
 		<br> - Usage of forklift to move piping materials (20ft bundles)
+		<br>
 		<br> - Stock tracking
 		</td>
 	</tr>
    </table>
    
-   <h1 class="header-education">EDUCATION</h1>
+   <h1 class="header-education" id="EDU">EDUCATION</h1>
    <table id="education" class="EDUTBL">
    <tr>
 		<th> SCHOOL </th>
@@ -335,17 +356,19 @@ th {
 	<footer>
 	<div class="socials"> 
 		<a class="socials_links" href="https://github.com/greatcoltini">
-			<img class="image" src="githubicohov.png" alt="GitHub" style="height: 5%; width: 5%;">
+			<img class="image" src="githubicohov.png" alt="GitHub" style="height: 7%; width: 7%;">
 		</a>
 		<a class="socials_links" href="https://instagram.com/greatcoltini">
-			<img class="image" src="greyinstaico.png" alt="Instagram" style="height: 5%; width: 5%;">
+			<img class="image" src="greyinstaico.png" alt="Instagram" style="height: 7%; width: 7%;">
 		</a>
 		<a class="socials_links" href="https://www.linkedin.com/in/colton-donkersgoed/">
-			<img class="image" src="greylinkedinico.png" alt="Indeed" style="height: 5%; width: 5%;">
+			<img class="image" src="greylinkedinico.png" alt="Indeed" style="height: 7%; width: 7%;">
 		</a>
 		<a class="socials_links" href="https://www.facebook.com/colton.donkersgoed">
-			<img class="image" src="greyfbico.png" alt="Facebook" style="height: 5%; width: 5%;">
+			<img class="image" src="greyfbico.png" alt="Facebook" style="height: 7%; width: 7%;">
 		</a>
+
+		<a class="copyright-info"> © Colton Donkersgoed - 2022 </a>
 		
 	</div>
 	</footer>

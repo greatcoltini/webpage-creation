@@ -45,10 +45,6 @@ h1 {
 	margin-top: 3vw;
 }
 
-/* Styling for Title Header */
-title {
-}
-
  /* Paragraph Stylization */
 p {
 	color: #71797E;
@@ -59,6 +55,7 @@ p {
 	border-style: solid;
 	border-color: #71797E;
 }
+/* style="background-image: url(stnehrth.jpg), url(sc_art.jpg); background-repeat: no-repeat; background-color: #cccccc; background-size: 50%" */
 
 .copyright-info {
 	margin: auto;
@@ -171,11 +168,7 @@ th {
   object-fit: scale-down;
 }
 
-.WRKTBL tr:nth-child(3) {
-  background-color: #008040;
-}
-
-.WRKTBL tr:nth-child(n+4) {
+.WRKTBL tr:nth-child(n+3) {
   background-color: #3d3d5c;
 }
 
@@ -188,7 +181,6 @@ th {
 }
 
 .row_proj {
-  background-color: black;
 }
 
 
@@ -212,7 +204,7 @@ th {
 
 <div class="main">
 	<h1 class="title"> <img src="header.png" style="object-fit: scale-down; left: -9.5vw; position: relative; width: 100%; ;"></h1>
-  <p>
+   <p >
   <br> I am a 25 year old graduate from the University of Toronto, with
   a Bachelors of Science degree. I studied Computer Science, Mathematics,
   and Psychology. 
@@ -221,6 +213,7 @@ th {
   modifications for several games (starting off in my early teens with editing
   sprites for Starcraft, moving on to creating and editing JSON files in Stonehearth
   and making simple mods for Minecraft).
+  <img src="stnehrth.jpg" style="object-fit: scale-down; height:10%; width: 10%; position: relative; left: -50px;">
   <img src="sc_art.jpg" style="object-fit: scale-down; height:10%; width: 10%; position: relative;";>
   
   
@@ -328,9 +321,20 @@ th {
    <h1 id="PROJECT"> PROJECTS </h1>
 	<table>
 		<tr class="row_proj"> 
-			<th> Hello </th>
-			<th> Description </th>
-			<th> Link to Project </th>
+			<th> TITLE </th>
+			<th> DESCRIPTION </th>
+			<th> LINK</th>
+		</tr>
+		<tr>
+			<td> STONEHEARTH EXPANDED</td>
+			<td> An all-purpose modification of one of my beloved games, Stonehearth. The mod is currently outdated, but consists of an updated projectile system 
+				by modifying the base game's LUA code, many new objects added to the game thanks to it's unique moddability, and more. </td> 
+			<td> <a href="https://github.com/greatcoltini/stonehearth_expanded" target="_blank"> Stonehearth Expanded </a> </td>
+		</tr>
+		<tr>
+			<td> WEBSITE </td>
+			<td> A basic website containing information about myself, my career, my education, and my resume.  </td>
+			<td> <a href="colton.html" target="_blank"> My Website </a> </td>
 		</tr>
 	</table>
   </p>
@@ -355,16 +359,16 @@ th {
 <div class="footer">
 	<footer>
 	<div class="socials"> 
-		<a class="socials_links" href="https://github.com/greatcoltini">
+		<a class="socials_links" href="https://github.com/greatcoltini" target="_blank">
 			<img class="image" src="githubicohov.png" alt="GitHub" style="height: 7%; width: 7%;">
 		</a>
-		<a class="socials_links" href="https://instagram.com/greatcoltini">
+		<a class="socials_links" href="https://instagram.com/greatcoltini" target="_blank">
 			<img class="image" src="greyinstaico.png" alt="Instagram" style="height: 7%; width: 7%;">
 		</a>
-		<a class="socials_links" href="https://www.linkedin.com/in/colton-donkersgoed/">
+		<a class="socials_links" href="https://www.linkedin.com/in/colton-donkersgoed/" target="_blank">
 			<img class="image" src="greylinkedinico.png" alt="Indeed" style="height: 7%; width: 7%;">
 		</a>
-		<a class="socials_links" href="https://www.facebook.com/colton.donkersgoed">
+		<a class="socials_links" href="https://www.facebook.com/colton.donkersgoed" target="_blank">
 			<img class="image" src="greyfbico.png" alt="Facebook" style="height: 7%; width: 7%;">
 		</a>
 

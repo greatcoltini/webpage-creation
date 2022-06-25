@@ -3,416 +3,433 @@
 
 <head>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Prepare a container for your calendar. -->
-<script
-  type='text/javascript' src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
->
-</script>
+	<!-- Prepare a container for your calendar. -->
+	<script type='text/javascript' src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+	</script>
 
 
 
-<style>
+	<style>
+		/* INTRODUCE FOOTER */
+		footer {
+			overflow: hidden;
+			background: grey;
+			position: relative;
+			/* Set the bar to fixed position */
+			bottom: -0.5vw;
+			/* Position the navbar at the bottom of the page */
+			width: 101%;
+			/* Full width */
+			margin-left: -0.5vw;
+			z-index: 1;
+			font-size: 1.25vw;
+		}
 
-/* INTRODUCE FOOTER */
-footer {
-  overflow: hidden;
-  background: grey;
-  position: relative; /* Set the bar to fixed position */
-  bottom: -0.5vw; /* Position the navbar at the bottom of the page */
-  width: 101%; /* Full width */
-  margin-left: -0.5vw;
-  z-index: 1;
-  font-size: 1.25vw;
-}
+		/* OTHER STYLE CHOICES */
+		html {
+			scroll-behavior: smooth;
+			background-image: url("linen.jpg");
+		}
 
- /* OTHER STYLE CHOICES */
-html {
-	scroll-behavior: smooth;
- }
- 
- /* Styling for the header */
-h1 {
-	float: centre;
-	margin: auto;
-	width: 60.5%;
-	background: #333;
-	text-align: center;
-	font-size: 3vw;
-	color: white;
-    text-shadow: 2px 2px 4px #000000;
-	margin-top: 3vw;
-}
+		/* Styling for the header */
+		h1 {
+			float: centre;
+			margin: auto;
+			width: 60.5%;
+			background: #333;
+			text-align: center;
+			font-size: 3vw;
+			color: white;
+			text-shadow: 2px 2px 4px #000000;
+			margin-top: 3vw;
+		}
 
- /* Paragraph Stylization */
-p {
-	color: #71797E;
-	margin: auto;
-	width: 60%;
-	text-align: center;
-	font-size: 2vw;
-	border-style: solid;
-	border-color: #71797E;
-}
-/* style="background-image: url(stnehrth.jpg), url(sc_art.jpg); background-repeat: no-repeat; background-color: #cccccc; background-size: 50%" */
+		/* Paragraph Stylization */
+		p {
+			color: #71797E;
+			margin: auto;
+			width: 60%;
+			text-align: center;
+			font-size: 2vw;
+			border-style: solid;
+			border-color: #71797E;
+			background-color: white;
+		}
 
-.copyright-info {
-	margin: auto;
-	text-align: center;
-	font-size: 1vw;
-	margin-left: 8vw;
-	padding: 0 0 0 0;
-	position: relative;
-	left: -4vw;
-	top: -1vw;
-}
+		/* style="background-image: url(stnehrth.jpg), url(sc_art.jpg); background-repeat: no-repeat; background-color: #cccccc; background-size: 50%" */
 
- /* The navigation bar */
-.navbar {
-  overflow: hidden;
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(51,51,51,1) 71%);
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
-  margin-left: -8px;
-  z-index: 1;
-  border-bottom: 4px solid black;
-  font-size: 1.25vw;
-}
+		.copyright-info {
+			margin: auto;
+			text-align: center;
+			font-size: 1vw;
+			margin-left: 8vw;
+			padding: 0 0 0 0;
+			position: relative;
+			left: -4vw;
+			top: -1vw;
+		}
 
-navbar-spacing {
-	margin-left: -30px;
-}
+		/* The navigation bar */
+		.navbar {
+			overflow: hidden;
+			background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(51, 51, 51, 1) 71%);
+			position: fixed;
+			/* Set the navbar to fixed position */
+			top: 0;
+			/* Position the navbar at the top of the page */
+			width: 100%;
+			/* Full width */
+			margin-left: -8px;
+			z-index: 1;
+			border-bottom: 4px solid black;
+			font-size: 1.25vw;
+		}
 
-/* Links inside the navbar */
-.navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 1vw 1vw;
-  text-decoration: none;
-}
+		navbar-spacing {
+			margin-left: -30px;
+		}
 
-.navbar a.BTN {
-  float: right;
-}
+		/* Links inside the navbar */
+		.navbar a {
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 1vw 1vw;
+			text-decoration: none;
+		}
 
-.navbar a.NAME {
-  font-size: 1.5vw;
-  padding: 1vw 1vw;
-}
+		.navbar a.BTN {
+			float: right;
+		}
 
-/* Change background on mouse-over */
-.navbar a.BTN:hover {
-  background: #ddd;
-  color: black;
-}
+		.navbar a.NAME {
+			font-size: 1.5vw;
+			padding: 1vw 1vw;
+		}
 
-/* Main content */
-.main {
-  margin-top: 50px; /* Add a top margin to avoid content overlay */
-  display:table;
-} 
+		/* Change background on mouse-over */
+		.navbar a.BTN:hover {
+			background: #ddd;
+			color: black;
+		}
 
-/* Table formatting */
-table {
-	border-collapse: collapse;
-	width: 60.5%;
-	display: block;
-	margin-left: 19.35vw;
-	scroll-margin-block-start: 10vw;
-  /*Adds margin to the top of the viewport*/
-	scroll-margin-block-end: 10vw;
-  /*Adds margin to the bottom of the viewport*/
-}
+		/* Main content */
+		.main {
+			margin-top: 50px;
+			/* Add a top margin to avoid content overlay */
+			display: table;
+		}
 
-.socials {
-  display: block;
-  position: relative;
-  margin-left: 30vw;
-  float: left;
-}
+		/* Table formatting */
+		table {
+			border-collapse: collapse;
+			width: 60.5%;
+			display: block;
+			margin-left: 19.35vw;
+			scroll-margin-block-start: 10vw;
+			/*Adds margin to the top of the viewport*/
+			scroll-margin-block-end: 10vw;
+			/*Adds margin to the bottom of the viewport*/
+			background-color: white;
+		}
 
-.socials_links {
-  position: relative;
-  padding-left: 5%;
-  text-decoration: none;
-}
+		.socials {
+			display: block;
+			position: relative;
+			margin-left: 30vw;
+			float: left;
+		}
 
-.socials_links .image {
-      transition: opacity .5s;
- }
-	
-.socials_links:hover .image {
-  opacity: 0.3;
-}
+		.socials_links {
+			position: relative;
+			padding-left: 5%;
+			text-decoration: none;
+		}
 
-td, th {
-  border: 2px solid black;
-  text-align: left;
-  padding: 8px;
-  font-size: 1.5vw;
-}
+		.socials_links .image {
+			transition: opacity .5s;
+		}
 
-th {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 2vw;
-	border: 3px solid black;
-}
+		.socials_links:hover .image {
+			opacity: 0.3;
+		}
 
-.WRKTBL {
-	scroll-margin-block-start: 10vw;
-  /*Adds margin to the top of the viewport*/
-	scroll-margin-block-end: 10vw;
-  /*Adds margin to the bottom of the viewport*/
-}
+		td,
+		th {
+			border: 2px solid black;
+			text-align: left;
+			padding: 0.5vw;
+			font-size: 1.5vw;
+		}
 
-.WRKTBL tr:nth-child(2) {
-  background-color: #00994d;
-  object-fit: scale-down;
-}
+		th {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 2vw;
+			border: 3px solid black;
+			text-align: center;
+		}
 
-.WRKTBL tr:nth-child(n+3) {
-  background-color: #3d3d5c;
-}
+		.WRKTBL {
+			scroll-margin-block-start: 10vw;
+			/*Adds margin to the top of the viewport*/
+			scroll-margin-block-end: 10vw;
+			/*Adds margin to the bottom of the viewport*/
+		}
 
-.EDUTBL {
-	scroll-margin-block-start: 10vw;
-  /*Adds margin to the top of the viewport*/
-	scroll-margin-block-end: 10vw;
-  /*Adds margin to the bottom of the viewport*/
-}
+		.WRKTBL tr:nth-child(2) {
+			background-color: #00994d;
+			object-fit: scale-down;
+		}
 
-.EDUTBL tr:nth-child(2) {
-  background-color: #00994d;
-}
+		.WRKTBL tr:nth-child(n+3) {
+			background-color: #3d3d5c;
+		}
 
-.EDUTBL tr:nth-child(n+3) {
-  background-color: #8e8818;
-}
+		.EDUTBL {
+			scroll-margin-block-start: 10vw;
+			/*Adds margin to the top of the viewport*/
+			scroll-margin-block-end: 10vw;
+			/*Adds margin to the bottom of the viewport*/
+		}
 
-.row_proj {
-}
+		.EDUTBL tr:nth-child(2) {
+			background-color: #00994d;
+		}
 
+		.EDUTBL tr:nth-child(n+3) {
+			background-color: #8e8818;
+		}
 
-</style>
+		.PROJTBL tr:nth-child(n+2) {
+			background-color: #00994d;
+		}
 
-<title style="font-size:5vw"> COLTON DONKERSGOED </title>
+	</style>
+
+	<title style="font-size:5vw"> COLTON DONKERSGOED </title>
 
 </head>
 
 <body>
 
-<div class="navbar">
-  <a class="NAME"> COLTON DONKERSGOED </a>
-  <a class="BTN" href="resume.docx" download="colton_resume">RESUME </a>
-  <a class="BTN" href="#PROJECT">PROJECTS</a>
-  <a class="BTN" href="#EDU"> EDUCATION </a>
-  <a class="BTN" href="#WRKEXP">WORK EXPERIENCE</a>
-  <a class="BTN" href="#HOME" onclick="topFunction()">HOME</a>
-</div>
-
-
-<div class="main">
-	<h1 class="title"> <img src="header.png" style="object-fit: scale-down; left: -9.5vw; position: relative; width: 100%; ;"></h1>
-   <p >
-  <br> I am a 25 year old graduate from the University of Toronto, with
-  a Bachelors of Science degree. I studied Computer Science, Mathematics,
-  and Psychology. 
-  
-  <br> <br> Throughout my young adulthood I busied myself with programming and creating
-  modifications for several games (starting off in my early teens with editing
-  sprites for Starcraft, moving on to creating and editing JSON files in Stonehearth
-  and making simple mods for Minecraft).
-  <img src="stnehrth.jpg" style="object-fit: scale-down; height:10%; width: 10%; position: relative; left: -50px;">
-  <img src="sc_art.jpg" style="object-fit: scale-down; height:10%; width: 10%; position: relative;";>
-  
-  
-  <br> <br> Currently, I am working in the water treatment industry as a
-  water treatment operator at a Class III plant for the 
-  Six Nations of the Grand River.
-  
-  <br> <br> 
-  
-  <iframe src="https://gifer.com/embed/28QH" width="10%" height="10%" style='transform:rotateY(180deg);margin-left:-50vw;' frameBorder="10" allowFullScreen></iframe>
-  
-	<h1 class="header-work">WORK EXPERIENCE </h1>
-      <table id="WRKEXP" class="WRKTBL">
-	<tr>
-		<th> Company </th>
-		<th> Job Title </th>
-		<th> Job Description </th>
-	</tr>
-	<tr>
-		<td> Six Nations of the Grand River </td>
-		<td> Assistant Water Treatment Operator </td>
-		<td> - Managing and treatment of a Class 3 Water Plant
-		<br>
-		<br> - Operating and Maintaining all of the treatment processes:
-		<blockquote>
-		<br>	- Membrane Filtration skids (x2)
-		<br>	- Biologically Activated Carbon tanks (x2)
-		<br>	- TrojanUV Reactors
-		<br>	- Chemical Feed pumps (for Polyaluminum Chloride and Sodium Hypochloride)
-		</blockquote>
-		<br> - Advanced problem-solving and troubleshooting skills; key to quickly
-		and competently resolving problems within the plant
-		<br>
-		<br> - Attention to detail; ensuring that all systems within the plant and distribution are running
-		properly where some systems may not have explicit warnings (i.e. pumping stations) </td>
-	</tr>
-	<tr>
-		<td> Telus International </td>
-		<td> Mapping Analyst </td>
-		<td> - Cleaning data generated from AI with regards to mapping software
-		<br>
-		<br> - Comparing results from user-generated queries to guidelines to ensure
-		that AI was successfully parsing the user input
-		</td>
-	</tr>
-	<tr>
-		<td> Ontario Filter </td>
-		<td> Machine Operator </td>
-		<td> - Maintainenance and Operation of steel cutting machine
-		<br>
-		<br> - Usage of forklift to move piping materials (20ft bundles)
-		<br>
-		<br> - Stock tracking
-		</td>
-	</tr>
-   </table>
-   
-   <h1 class="header-education">EDUCATION</h1>
-   <table id="EDU" class="EDUTBL">
-   <tr>
-		<th> SCHOOL </th>
-		<th> EDUCATION </th>
-		<th> SPECIFIC INFORMATION </th>
-	</tr>
-	<tr>
-		<td> UNIVERSITY OF TORONTO </td>
-		<td> BACHELORS OF SCIENCE :: 2021 </td>
-		<td> - studied Computer Science
-		<blockquote> - Object-Oriented programmming with Java 
-				<br> - Classes and understanding structs with C
-				<br> - Experience programming in Linux and MacOS
-				<br> - Experience with Assembly and low-level language programming
-				<br> - Programming Algorithms with Python
-				<br> - Logic-based programming in C 
-		</blockquote>
-			<br> - studied Psychology
-		<blockquote> - Abnormal Psychology
-				<br> - Psychology and the Law
-				<br> - Cognitive Disorders in Psychology
-				<br> - Biopsychology of Sex
-				<br> - Psychology of Speech
-		</blockquote>
-			<br> - studied Mathematics
-		<blockquote>
-				- Topography
-			<br> - Discrete Mathematics (i.e. Linear Algebra)
-			<br> - Problem-solving with Proofs
-			<br> - Multi-variable Calculus
-		</blockquote>
-		</td>
-	</tr>
-	<tr>
-		<td rowspan="2"> HARVARD - IN PROGRESS </td>
-		<td> CERTIFICATION IN INTRO TO COMPUTER SCIENCE </td>
-		<td> - Coursework in basic computer science application and theory </td>
-	</tr>
-	<tr>
-		<td> CERTIFICATION IN MACHINE LEARNING AND AI</td>
-		<td> - Training with Python in regards to machine learning, artificial intelligence
-		<br><br> - Specifically attacks concepts and algorithms at the foundation of modern AI</td>
-	</tr>
-	</table>
-   
-   
-   <h1> PROJECTS </h1>
-	<table id="PROJECT">
-		<tr class="row_proj"> 
-			<th> TITLE </th>
-			<th> DESCRIPTION </th>
-			<th> LINK</th>
-		</tr>
-		<tr>
-			<td> STONEHEARTH EXPANDED</td>
-			<td> An all-purpose modification of one of my beloved games, Stonehearth. The mod is currently outdated, but consists of an updated projectile system 
-				by modifying the base game's LUA code, many new objects added to the game thanks to it's unique moddability, and more. </td> 
-			<td> <a href="https://github.com/greatcoltini/stonehearth_expanded" target="_blank"> Stonehearth Expanded </a> </td>
-		</tr>
-		<tr>
-			<td> WEBSITE </td>
-			<td> A basic website containing information about myself, my career, my education, and my resume.  </td>
-			<td> <a href="colton.html" target="_blank"> My Website </a> </td>
-		</tr>
-	</table>
-	<br><br>
-  </p>
-  
-  
-</div> 
-
-
-
-<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-<link
-  rel="stylesheet"
-  href="github-calendar.css"
-/>
-
-<!-- Prepare a container for your calendar. -->
-<div class="calendar" id="GITHUB">
-    <!-- Loading stuff -->
-    Loading the data just for you.
-</div>
-
-<div class="footer">
-	<footer>
-	<div class="socials"> 
-		<a class="socials_links" href="https://github.com/greatcoltini" target="_blank">
-			<img class="image" src="githubicohov.png" alt="GitHub" style="height: 7%; width: 7%;">
-		</a>
-		<a class="socials_links" href="https://instagram.com/greatcoltini" target="_blank">
-			<img class="image" src="greyinstaico.png" alt="Instagram" style="height: 7%; width: 7%;">
-		</a>
-		<a class="socials_links" href="https://www.linkedin.com/in/colton-donkersgoed/" target="_blank">
-			<img class="image" src="greylinkedinico.png" alt="Indeed" style="height: 7%; width: 7%;">
-		</a>
-		<a class="socials_links" href="https://www.facebook.com/colton.donkersgoed" target="_blank">
-			<img class="image" src="greyfbico.png" alt="Facebook" style="height: 7%; width: 7%;">
-		</a>
-
-		<a class="copyright-info"> © Colton Donkersgoed - 2022 </a>
-		
+	<div class="navbar">
+		<a class="NAME"> COLTON DONKERSGOED </a>
+		<a class="BTN" href="resume.docx" download="colton_resume">RESUME </a>
+		<a class="BTN" href="#PROJECT">PROJECTS</a>
+		<a class="BTN" href="#EDU"> EDUCATION </a>
+		<a class="BTN" href="#WRKEXP">WORK EXPERIENCE</a>
+		<a class="BTN" href="#HOME" onclick="topFunction()">HOME</a>
 	</div>
-	</footer>
-</div>
-
-<script>
-    // or enable responsive functionality:
-    GitHubCalendar(".calendar", "greatcoltini", { responsive: true });
-</script>
-
-<script>
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-} 
-
-</script>
 
 
-<script src="markup_me.js"> </script>
+	<div class="main">
+		<h1 class="title"> <img src="header.png"
+				style="object-fit: scale-down; left: -9.5vw; position: relative; width: 100%; ;"></h1>
+		<p>
+			<br> I am a 25 year old graduate from the University of Toronto, with
+			a Bachelors of Science degree. I studied Computer Science, Mathematics,
+			and Psychology.
+
+			<br> <br> Throughout my young adulthood I busied myself with programming and creating
+			modifications for several games (starting off in my early teens with editing
+			sprites for Starcraft, moving on to creating and editing JSON files in Stonehearth
+			and making simple mods for Minecraft).
+			<!-- <img src="stnehrth.jpg"
+				style="object-fit: scale-down; height:10%; width: 10%; position: relative; left: -50px;">
+			<img src="sc_art.jpg" style="object-fit: scale-down; height:10%; width: 10%; position: relative;" ;>
+			
+			<iframe src="https://gifer.com/embed/28QH" width="10%" height="10%"
+				style='transform:rotateY(180deg);margin-left:-50vw;' frameBorder="10" allowFullScreen></iframe>
+
+			!-->
+
+			<br> <br> Currently, I am working in the water treatment industry as a
+			water treatment operator at a Class III plant for the
+			Six Nations of the Grand River.
+
+			
+
+			<br> <br>
+
+
+		<h1 class="header-work">WORK EXPERIENCE </h1>
+		<table id="WRKEXP" class="WRKTBL">
+			<tr>
+				<th> Company </th>
+				<th> Job Title </th>
+				<th> Job Description </th>
+			</tr>
+			<tr>
+				<td> Six Nations of the Grand River </td>
+				<td> Assistant Water Treatment Operator </td>
+				<td> - Managing and treatment of a Class 3 Water Plant
+					<br>
+					<br> - Operating and Maintaining all of the treatment processes:
+					<blockquote>
+						<br> - Membrane Filtration skids (x2)
+						<br> - Biologically Activated Carbon tanks (x2)
+						<br> - TrojanUV Reactors
+						<br> - Chemical Feed pumps (for Polyaluminum Chloride and Sodium Hypochloride)
+					</blockquote>
+					<br> - Advanced problem-solving and troubleshooting skills; key to quickly
+					and competently resolving problems within the plant
+					<br>
+					<br> - Attention to detail; ensuring that all systems within the plant and distribution are running
+					properly where some systems may not have explicit warnings (i.e. pumping stations)
+				</td>
+			</tr>
+			<tr>
+				<td> Telus International </td>
+				<td> Mapping Analyst </td>
+				<td> - Cleaning data generated from AI with regards to mapping software
+					<br>
+					<br> - Comparing results from user-generated queries to guidelines to ensure
+					that AI was successfully parsing the user input
+				</td>
+			</tr>
+			<tr>
+				<td> Ontario Filter </td>
+				<td> Machine Operator </td>
+				<td> - Maintainenance and Operation of steel cutting machine
+					<br>
+					<br> - Usage of forklift to move piping materials (20ft bundles)
+					<br>
+					<br> - Stock tracking
+				</td>
+			</tr>
+		</table>
+
+		<h1 class="header-education">EDUCATION</h1>
+		<table id="EDU" class="EDUTBL">
+			<tr>
+				<th> SCHOOL </th>
+				<th> EDUCATION </th>
+				<th> SPECIFIC INFORMATION </th>
+			</tr>
+			<tr>
+				<td> UNIVERSITY OF TORONTO </td>
+				<td> BACHELORS OF SCIENCE :: 2021 </td>
+				<td> - studied Computer Science
+					<blockquote> - Object-Oriented programmming with Java
+						<br> - Classes and understanding structs with C
+						<br> - Experience programming in Linux and MacOS
+						<br> - Experience with Assembly and low-level language programming
+						<br> - Programming Algorithms with Python
+						<br> - Logic-based programming in C
+					</blockquote>
+					<br> - studied Psychology
+					<blockquote> - Abnormal Psychology
+						<br> - Psychology and the Law
+						<br> - Cognitive Disorders in Psychology
+						<br> - Biopsychology of Sex
+						<br> - Psychology of Speech
+					</blockquote>
+					<br> - studied Mathematics
+					<blockquote>
+						- Topography
+						<br> - Discrete Mathematics (i.e. Linear Algebra)
+						<br> - Problem-solving with Proofs
+						<br> - Multi-variable Calculus
+					</blockquote>
+				</td>
+			</tr>
+			<tr>
+				<td rowspan="2"> HARVARD - IN PROGRESS </td>
+				<td> CERTIFICATION IN INTRO TO COMPUTER SCIENCE </td>
+				<td> - Coursework in basic computer science application and theory </td>
+			</tr>
+			<tr>
+				<td> CERTIFICATION IN MACHINE LEARNING AND AI</td>
+				<td> - Training with Python in regards to machine learning, artificial intelligence
+					<br><br> - Specifically attacks concepts and algorithms at the foundation of modern AI
+				</td>
+			</tr>
+		</table>
+
+
+		<h1> PROJECTS </h1>
+		<table id="PROJECT" class="PROJTBL">
+			<tr class="row_proj">
+				<th> TITLE </th>
+				<th> DESCRIPTION </th>
+				<th> LINK</th>
+			</tr>
+			<tr>
+				<td> STONEHEARTH EXPANDED</td>
+				<td> An all-purpose modification of one of my beloved games, Stonehearth. The mod is currently outdated,
+					but consists of an updated projectile system
+					by modifying the base game's LUA code, many new objects added to the game thanks to it's unique
+					moddability, and more. </td>
+				<td> <a href="https://github.com/greatcoltini/stonehearth_expanded" target="_blank"> Stonehearth
+						Expanded </a> </td>
+			</tr>
+			<tr>
+				<td> WEBSITE </td>
+				<td> A basic website containing information about myself, my career, my education, and my resume. </td>
+				<td> <a href="colton.html" target="_blank"> My Website </a> </td>
+			</tr>
+		</table>
+		<br><br>
+		</p>
+
+
+	</div>
+
+
+
+	<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+	<link rel="stylesheet" href="github-calendar.css" />
+
+	<!-- Prepare a container for your calendar. -->
+	<div class="calendar" id="GITHUB">
+		<!-- Loading stuff -->
+		Loading the data just for you.
+	</div>
+
+	<div class="footer">
+		<footer>
+			<div class="socials">
+				<a class="socials_links" href="https://github.com/greatcoltini" target="_blank">
+					<img class="image" src="githubicohov.png" alt="GitHub" style="height: 7%; width: 7%;">
+				</a>
+				<a class="socials_links" href="https://instagram.com/greatcoltini" target="_blank">
+					<img class="image" src="greyinstaico.png" alt="Instagram" style="height: 7%; width: 7%;">
+				</a>
+				<a class="socials_links" href="https://www.linkedin.com/in/colton-donkersgoed/" target="_blank">
+					<img class="image" src="greylinkedinico.png" alt="Indeed" style="height: 7%; width: 7%;">
+				</a>
+				<a class="socials_links" href="https://www.facebook.com/colton.donkersgoed" target="_blank">
+					<img class="image" src="greyfbico.png" alt="Facebook" style="height: 7%; width: 7%;">
+				</a>
+
+				<a class="copyright-info"> © Colton Donkersgoed - 2022 </a>
+
+			</div>
+		</footer>
+	</div>
+
+	<script>
+		// or enable responsive functionality:
+		GitHubCalendar(".calendar", "greatcoltini", { responsive: true });
+	</script>
+
+	<script>
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0; // For Safari
+			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}
+
+	</script>
+
+
+	<script src="markup_me.js"> </script>
 
 
 </body>
 
 </html>
-
-

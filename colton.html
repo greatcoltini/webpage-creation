@@ -8,6 +8,9 @@
 	<!-- Prepare a container for your calendar. -->
 	<script type='text/javascript' src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
 	</script>
+	
+	
+
 
 
 
@@ -414,6 +417,7 @@
 
 	<div class="footer">
 		<footer>
+			
 			<div class="socials">
 				<a class="socials_links" href="https://github.com/greatcoltini" target="_blank">
 					<img class="image" src="githubicohov.png" alt="GitHub" style="height: 7%; width: 7%;">
@@ -431,6 +435,10 @@
 				<a class="copyright-info"> © Colton Donkersgoed - 2022 </a>
 
 			</div>
+			
+			<div class="date">
+				<a id="date"> </a>
+			</div>
 		</footer>
 	</div>
 
@@ -438,6 +446,8 @@
 		// or enable responsive functionality:
 		GitHubCalendar(".calendar", "greatcoltini", { responsive: true });
 	</script>
+	
+
 
 	<script>
 
@@ -448,7 +458,20 @@
 		}
 
 	</script>
-
+	
+	<script>
+	// date script
+	function doDate()
+	{
+		const d = new Date();
+		document.getElementById("date").innerHTML = d;
+	}
+	
+	setInterval(doDate, 1000);
+	
+	</script>
+	
+	
 
 	<script src="markup_me.js"> </script>
 

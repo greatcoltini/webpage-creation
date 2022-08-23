@@ -96,10 +96,73 @@
     <div class="divider"></div>
 
     <div id="EDU" class="container my-5">
+      <h1 class="border-bottom display-1"> EDUCATION </h1>
       <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
         <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-          <h1 class="display-4 fw-bold lh-1">Border hero with cropped image and shadows</h1>
-          <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  Bachelors of Science
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                  <strong>Graduating from University of Toronto in 2021 with a Bachelors of Science.</strong>
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col"> Specialization  </th>
+                        <th scope="col"> Specific Courses </th>
+                        <th scope="col"> More Detailed Description </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row"> Computer Science </th>
+                        <td> - Object Oriented Programming</td>
+                        <td> - Specific education with Java with regards to OOP principles and dynamics.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"> Mathematics </th>
+                        <td> - Linear Algebra <br> - Proofs <br> - Multivariable Calculus </td>
+                        <td> - Understanding matrices and graphing </td>
+                      </tr>
+                      <tr>
+                        <th scope="row"> Psychology </th>
+                        <td> - Psychology and the Law <br> - Psychological Disorders <br> The Biopsychology of Sex </td>
+                        <td> - Understanding the impact of Law on Psychology and research </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  Water Treatment Licensing
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  Additional Certifications and Training
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
             <img class="rounded-lg-3" src="bootstrap-docs.png" alt="" width="720">
@@ -145,21 +208,21 @@
     </div>
 
     <div class="container">
-      <footer class="py-4 my-4 border-top">
-        <ul class="list-group list-group-horizontal list-group-flush">
-          <li class="list-group-item"><a class="socials_links" href="https://github.com/greatcoltini">
-            <img class="rounded mx-auto d-block" src="githubicohov.png" alt="GitHub" width=50 height=50>
-          </a></li>
-          <li class="list-group-item"><a class="socials_links" href="https://instagram.com/greatcoltini">
-            <img class="rounded mx-auto d-block" src="greyinstaico.png" alt="Instagram" width=50 height=50>
-          </a></li>
-          <li class="list-group-item"><a class="socials_links" href="https://www.linkedin.com/in/colton-donkersgoed/">
-            <img class="rounded mx-auto d-block" src="greylinkedinico.png" alt="Indeed" width=50 height=50>
-          </a></li>
-          <li class="list-group-item"><a class="socials_links" href="https://www.facebook.com/colton.donkersgoed">
-            <img class="rounded mx-auto d-block" src="greyfbico.png" alt="Facebook" width=50 height=50>
-          </a></li>
-        </ul>
+      <footer class="py-3 my-3 border-top">
+        <div class="socials">
+            <a class="socials_links" href="https://github.com/greatcoltini" target="_blank">
+                <img class="image socialimg" src="githubicohov.png" alt="GitHub">
+            </a>
+            <a class="socials_links" href="https://instagram.com/greatcoltini" target="_blank">
+                <img class="image socialimg" src="greyinstaico.png" alt="Instagram">
+            </a>
+            <a class="socials_links" href="https://www.linkedin.com/in/colton-donkersgoed/" target="_blank">
+                <img class="image socialimg" src="greylinkedinico.png" alt="Indeed">
+            </a>
+            <a class="socials_links" href="https://www.facebook.com/colton.donkersgoed" target="_blank">
+                <img class="image socialimg" src="greyfbico.png" alt="Facebook">
+            </a>
+        </div>
       </footer>
       <p class="text-center text-muted">© 2022 COLTON DONKERSGOED</p>
     </div>

@@ -2,6 +2,11 @@ h1 {
     text-align: center;
 }
 
+.header-img {
+    position: left;
+    margin-left: -10vw;
+}
+
 .nav-link {
     color: white;
 }

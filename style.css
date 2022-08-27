@@ -44,6 +44,14 @@ h1 {
 }
 
 .socialimg {
-    width: 5vw;
-    height: 5vw;
+    width: 5%;
+}
+
+.centered-text {
+    text-align: center;
+}
+
+.bkgrnd-img {
+    background-repeat: repeat;
+    background-size: 100%;
 }

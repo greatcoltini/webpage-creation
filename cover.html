@@ -13,6 +13,11 @@
 
 
     <style>
+      body {
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -63,21 +68,32 @@
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
       }
+
+      .socialimg {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 5%;
+        transition: opacity .5s;
+      }
+
+      .socialimg:hover {
+          opacity: 0.3;
+      }
+
     </style>
 
     
     <!-- Custom styles for this template -->
     <link href="cover.css" rel="stylesheet">
   </head>
-  <body class="d-flex h-100 text-center text-bg-dark">
+  <body class="d-flex h-100 text-center text-bg-dark" background="colton_cover.png" background-size="auto">
     
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
   <header class="mb-auto">
     <div>
       <h3 class="float-md-start mb-0">CD</h3>
       <nav class="nav nav-masthead justify-content-center float-md-end">
-        <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#">Home</a>
-        <a class="nav-link fw-bold py-1 px-0" href="#">Features</a>
         <a class="nav-link fw-bold py-1 px-0" href="#">Contact</a>
       </nav>
     </div>
@@ -85,14 +101,23 @@
 
   <main class="px-3">
     <h1>A Colton Donkersgoed Story.</h1>
-    <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+    <p class="lead"> Click below or scroll down to learn more about myself and my story.</p>
     <p class="lead">
       <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white"> Enter.</a>
     </p>
   </main>
 
   <footer class="mt-auto text-white-50">
-    <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
+    <p>Delve into my socials:
+      <div class="row mb-2">
+        <ul>
+          <a> <img class="image socialimg" src="githublight.png" alt="GitHub"></a>
+          <a> <img class="image socialimg" src="instalight.png" alt="GitHub"></a>
+          <a> <img class="image socialimg" src="linkedinlight.png" alt="GitHub"></a>
+          <a> <img class="image socialimg" src="fblight.png" alt="GitHub"></a>
+        </ul>
+      </div>
+    </p>
   </footer>
 </div>
 

@@ -1,4 +1,3 @@
-var cover_choices = new Array('assets/cover_small.jpg', 'assets/cover_small_dark.jpg');
 var el = document.getElementById("cover");
 const hours = new Date().getHours()
 const isDayTime = hours > 6 && hours < 20
@@ -10,9 +9,19 @@ function daytime_cover() {
 		el.className = "d-flex h-100 text-center text-bg-dark bd-placeholder-img";
 		el.style.backgroundSize = "100%";
 	}
+	else if (isDayTime && width < 800) {
+		el.style.background = "url(assets/cover_small.jpg)";
+		
+	}
+	else {
+		el.style.background = "url(colton_cover.png)";
+	}
+	el.className = "d-flex h-100 text-center text-bg-dark bd-placeholder-img";
+	el.style.backgroundSize = "100%";
+	el.style.backgroundRepeat = "no-repeat";
+	el.style.backgroundPosition = "center";
 }
 
-window.onload = daytime_cover();
-
-
-document.getElementsByTagName("body")[0].onresize = daytime_cover();
+setInterval(function(){
+        daytime_cover();
+    }, 100);

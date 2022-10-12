@@ -36,7 +36,7 @@ h1 {
 .socials {
     display: block;
     position: relative;
-    margin-left: 43.5%;
+    margin-left: 37%;
 }
 
 .socials_links {
@@ -54,7 +54,7 @@ h1 {
 }
 
 .socialimg {
-    width: 5%;
+    width: 10%;
 }
 
 .centered-text {

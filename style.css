@@ -69,4 +69,7 @@ h1 {
 .slower {
   transition: transform 5s ease-in-out;
 }
+
+.th {
+    font-size: 1vw;
 }

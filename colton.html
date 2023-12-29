@@ -5,12 +5,16 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- Prepare a container for your calendar. -->
-	<script type='text/javascript' src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
-	</script>
+	<!-- GOES INTO HEAD -->
+	<link rel="stylesheet" href="http://lengthylyova.pythonanywhere.com/static/gh-contrib-graph/gh.css">
+
 
 
 	<style>
+		.inner {
+			max-width: 80%;
+		}
+
 		/* INTRODUCE FOOTER */
 		footer {
 			overflow: hidden;
@@ -231,229 +235,229 @@
 
 <body>
 
-	<div class="navbar">
-		<a class="NAME"> COLTON DONKERSGOED </a>
-		<a class="BTN" href="resume.docx" download="colton_resume">RESUME </a>
-		<a class="BTN" href="#PROJECT">PROJECTS</a>
-		<a class="BTN" href="#EDU"> EDUCATION </a>
-		<a class="BTN" href="#WRKEXP">WORK EXPERIENCE</a>
-		<a class="BTN" href="#HOME" onclick="topFunction()">HOME</a>
-	</div>
+	<div class="inner">
+
+		<div class="navbar">
+			<a class="NAME"> COLTON DONKERSGOED </a>
+			<a class="BTN" href="resume.docx" download="colton_resume">RESUME </a>
+			<a class="BTN" href="#PROJECT">PROJECTS</a>
+			<a class="BTN" href="#EDU"> EDUCATION </a>
+			<a class="BTN" href="#WRKEXP">WORK EXPERIENCE</a>
+			<a class="BTN" href="#HOME" onclick="topFunction()">HOME</a>
+		</div>
 
 
-	<div class="main">
-		<h1 class="title"> <img src="header.png"
-				style="object-fit: scale-down; position: relative; width: 100%; ;"></h1>
-		<p>
-			<br> I am a 25 year old graduate from the University of Toronto, with
-			a Bachelors of Science degree. I studied Computer Science, Mathematics,
-			and Psychology. 
-			<!-- <img src="stnehrth.jpg"
-				style="object-fit: scale-down; height:10%; width: 10%; position: relative; left: -50px;">
-			<img src="sc_art.jpg" style="object-fit: scale-down; height:10%; width: 10%; position: relative;" ;>
-			
-			<iframe src="https://gifer.com/embed/28QH" width="10%" height="10%"
-				style='transform:rotateY(180deg);margin-left:-50vw;' frameBorder="10" allowFullScreen></iframe>
+		<div class="main">
+			<h1 class="title"> <img src="header.png"
+					style="object-fit: scale-down; position: relative; width: 100%; ;"></h1>
+			<p>
+				<br> I am a 25 year old graduate from the University of Toronto, with
+				a Bachelors of Science degree. I studied Computer Science, Mathematics,
+				and Psychology. 
+				<!-- <img src="stnehrth.jpg"
+					style="object-fit: scale-down; height:10%; width: 10%; position: relative; left: -50px;">
+				<img src="sc_art.jpg" style="object-fit: scale-down; height:10%; width: 10%; position: relative;" ;>
+				
+				<iframe src="https://gifer.com/embed/28QH" width="10%" height="10%"
+					style='transform:rotateY(180deg);margin-left:-50vw;' frameBorder="10" allowFullScreen></iframe>
 
-			!-->
+				!-->
 
-			<br> <br> Currently, I am working in the water treatment industry as a
-			water treatment operator at a Class III plant for the
-			Six Nations of the Grand River.
+				<br> <br> Currently, I am working in the water treatment industry as a
+				water treatment operator at a Class III plant for the
+				Six Nations of the Grand River.
 
-			
+				
 
-			<br> <br>
+				<br> <br>
 
 
-		<h1 class="header-work">WORK EXPERIENCE </h1>
-		<table id="WRKEXP" class="WRKTBL">
-			<tr>
-				<th> Company </th>
-				<th> Job Title </th>
-				<th> Job Description </th>
-			</tr>
-			<tr>
-				<td> Six Nations of the Grand River </td>
-				<td> Assistant Water Treatment Operator </td>
-				<td> - Managing and treatment of a Class 3 Water Plant
-					<br>
-					<br> - Operating and Maintaining all of the treatment processes:
-					<blockquote>
-						<br> - Membrane Filtration skids (x2)
-						<br> - Biologically Activated Carbon tanks (x2)
-						<br> - TrojanUV Reactors
-						<br> - Chemical Feed pumps (for Polyaluminum Chloride and Sodium Hypochloride)
+			<h1 class="header-work">WORK EXPERIENCE </h1>
+			<table id="WRKEXP" class="WRKTBL">
+				<tr>
+					<th> Company </th>
+					<th> Job Title </th>
+					<th> Job Description </th>
+				</tr>
+				<tr>
+					<td> Six Nations of the Grand River </td>
+					<td> Assistant Water Treatment Operator </td>
+					<td> - Managing and treatment of a Class 3 Water Plant
+						<br>
+						<br> - Operating and Maintaining all of the treatment processes:
+						<blockquote>
+							<br> - Membrane Filtration skids (x2)
+							<br> - Biologically Activated Carbon tanks (x2)
+							<br> - TrojanUV Reactors
+							<br> - Chemical Feed pumps (for Polyaluminum Chloride and Sodium Hypochloride)
+						</blockquote>
+						<br> - Advanced problem-solving and troubleshooting skills; key to quickly
+						and competently resolving problems within the plant
+						<br>
+						<br> - Attention to detail; ensuring that all systems within the plant and distribution are running
+						properly where some systems may not have explicit warnings (i.e. pumping stations)
+					</td>
+				</tr>
+				<tr>
+					<td> Telus International </td>
+					<td> Mapping Analyst </td>
+					<td> - Cleaning data generated from AI with regards to mapping software
+						<br>
+						<br> - Comparing results from user-generated queries to guidelines to ensure
+						that AI was successfully parsing the user input
+					</td>
+				</tr>
+				<tr>
+					<td> Ontario Filter </td>
+					<td> Machine Operator </td>
+					<td> - Maintainenance and Operation of steel cutting machine
+						<br>
+						<br> - Usage of forklift to move piping materials (20ft bundles)
+						<br>
+						<br> - Stock tracking
+					</td>
+				</tr>
+			</table>
+
+			<h1 class="header-education">EDUCATION</h1>
+			<table id="EDU" class="EDUTBL">
+				<tr>
+					<th> SCHOOL </th>
+					<th> EDUCATION </th>
+					<th> SPECIFIC INFORMATION </th>
+				</tr>
+				<tr>
+					<td style="text-align: center"> UNIVERSITY OF TORONTO </td>
+					<td> BACHELORS OF SCIENCE :: 2021 </td>
+					<td> - studied Computer Science
+						<blockquote> - Object-Oriented programmming with Java
+							<br> - Classes and understanding structs with C
+							<br> - Experience programming in Linux and MacOS
+							<br> - Experience with Assembly and low-level language programming
+							<br> - Programming Algorithms with Python
+							<br> - Logic-based programming in C
+						</blockquote>
+						<br> - studied Psychology
+						<blockquote> - Abnormal Psychology
+							<br> - Psychology and the Law
+							<br> - Cognitive Disorders in Psychology
+							<br> - Biopsychology of Sex
+							<br> - Psychology of Speech
+						</blockquote>
+						<br> - studied Mathematics
+						<blockquote>
+							- Topography
+							<br> - Discrete Mathematics (i.e. Linear Algebra)
+							<br> - Problem-solving with Proofs
+							<br> - Multi-variable Calculus
+						</blockquote>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: center" rowspan="2"> HARVARD - IN PROGRESS </td>
+					<td> CERTIFICATION IN INTRO TO COMPUTER SCIENCE </td>
+					<td> - Coursework in basic computer science application and theory </td>
+				</tr>
+				<tr>
+					<td style="text-align: center"> CERTIFICATION IN MACHINE LEARNING AND AI</td>
+					<td> - Training with Python in regards to machine learning, artificial intelligence
+						<br><br> - Specifically attacks concepts and algorithms at the foundation of modern AI
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: center" rowspan="2"> WALKERTON CLEAN WATER CENTRE </td>
+					<td rowspan="2"> WATER TREATMENT LICENSING </td>
+					<td> CLASS I LICENSING
+					<blockquote> <br> - WATER TREATMENT
+								<br> - WATER DISTRIBUTION AND SUPPLY
 					</blockquote>
-					<br> - Advanced problem-solving and troubleshooting skills; key to quickly
-					and competently resolving problems within the plant
-					<br>
-					<br> - Attention to detail; ensuring that all systems within the plant and distribution are running
-					properly where some systems may not have explicit warnings (i.e. pumping stations)
-				</td>
-			</tr>
-			<tr>
-				<td> Telus International </td>
-				<td> Mapping Analyst </td>
-				<td> - Cleaning data generated from AI with regards to mapping software
-					<br>
-					<br> - Comparing results from user-generated queries to guidelines to ensure
-					that AI was successfully parsing the user input
-				</td>
-			</tr>
-			<tr>
-				<td> Ontario Filter </td>
-				<td> Machine Operator </td>
-				<td> - Maintainenance and Operation of steel cutting machine
-					<br>
-					<br> - Usage of forklift to move piping materials (20ft bundles)
-					<br>
-					<br> - Stock tracking
-				</td>
-			</tr>
-		</table>
-
-		<h1 class="header-education">EDUCATION</h1>
-		<table id="EDU" class="EDUTBL">
-			<tr>
-				<th> SCHOOL </th>
-				<th> EDUCATION </th>
-				<th> SPECIFIC INFORMATION </th>
-			</tr>
-			<tr>
-				<td style="text-align: center"> UNIVERSITY OF TORONTO </td>
-				<td> BACHELORS OF SCIENCE :: 2021 </td>
-				<td> - studied Computer Science
-					<blockquote> - Object-Oriented programmming with Java
-						<br> - Classes and understanding structs with C
-						<br> - Experience programming in Linux and MacOS
-						<br> - Experience with Assembly and low-level language programming
-						<br> - Programming Algorithms with Python
-						<br> - Logic-based programming in C
-					</blockquote>
-					<br> - studied Psychology
-					<blockquote> - Abnormal Psychology
-						<br> - Psychology and the Law
-						<br> - Cognitive Disorders in Psychology
-						<br> - Biopsychology of Sex
-						<br> - Psychology of Speech
-					</blockquote>
-					<br> - studied Mathematics
-					<blockquote>
-						- Topography
-						<br> - Discrete Mathematics (i.e. Linear Algebra)
-						<br> - Problem-solving with Proofs
-						<br> - Multi-variable Calculus
-					</blockquote>
-				</td>
-			</tr>
-			<tr>
-				<td style="text-align: center" rowspan="2"> HARVARD - IN PROGRESS </td>
-				<td> CERTIFICATION IN INTRO TO COMPUTER SCIENCE </td>
-				<td> - Coursework in basic computer science application and theory </td>
-			</tr>
-			<tr>
-				<td style="text-align: center"> CERTIFICATION IN MACHINE LEARNING AND AI</td>
-				<td> - Training with Python in regards to machine learning, artificial intelligence
-					<br><br> - Specifically attacks concepts and algorithms at the foundation of modern AI
-				</td>
-			</tr>
-			<tr>
-				<td style="text-align: center" rowspan="2"> WALKERTON CLEAN WATER CENTRE </td>
-				<td rowspan="2"> WATER TREATMENT LICENSING </td>
-				<td> CLASS I LICENSING
-				<blockquote> <br> - WATER TREATMENT
-							 <br> - WATER DISTRIBUTION AND SUPPLY
-				</blockquote>
-				 OPERATOR IN TRAINING LICENSING 
-				<blockquote> 
-							 <br> - WASTEWATER COLLECTION 
-							 <br> - WASTEWATER TREATMENT
-				</blockquote> </td>
-			</tr>
-		</table>
+					OPERATOR IN TRAINING LICENSING 
+					<blockquote> 
+								<br> - WASTEWATER COLLECTION 
+								<br> - WASTEWATER TREATMENT
+					</blockquote> </td>
+				</tr>
+			</table>
 
 
-		<h1> PROJECTS </h1>
-		<table id="PROJECT" class="PROJTBL">
-			<tr class="row_proj">
-				<th> TITLE </th>
-				<th> DESCRIPTION </th>
-				<th> LINK</th>
-			</tr>
-			<tr>
-				<td class="row-title"> STONEHEARTH EXPANDED</td>
-				<td> An all-purpose modification of one of my beloved games, Stonehearth. The mod is currently outdated,
-					but consists of an updated projectile system
-					by modifying the base game's LUA code, many new objects added to the game thanks to it's unique
-					moddability, and more. </td>
-				<td> <a href="https://github.com/greatcoltini/stonehearth_expanded" target="_blank" style="text-align: center"> Stonehearth
-						Expanded </a> </td>
-			</tr>
-			<tr>
-				<td class="row-title"> WEBSITE </td>
-				<td> A basic website containing information about myself, my career, my education, and my resume. </td>
-				<td> <a href="colton.html" target="_blank" style="text-align: center"> My Website </a> </td>
-			</tr>
-			<tr>
-				<td class="row-title"> WATERBILLING FIX </td>
-				<td> A simple python program editing data exported as a CSV file, and converting it into a different format so that
-				it is properly read into the program. </td>
-				<td> <a href="https://github.com/greatcoltini/water-billing-public" target="_blank" style="text-align: center"> Waterbilling Public </a> </td>
-			</tr>
-			<tr>
-				<td class="row-title"> WATERPLANT GUI </td>
-				<td> A python program that is designed to contain and manipulate important information with regards to water treatment plant operations." </td>
-				<td> <a href="https://github.com/greatcoltini/waterplant_gui" target="_blank" style="text-align: center"> Waterplant GUI </a> </td>
-			</tr>
-			<tr>
-				<td class="row-title"> LEETCODE PROBLEM SOLVING </td>
-				<td> A github repo containing my solutions to LeetCode problems, solving ~1 per day. </td>
-				<td> <a href="https://github.com/greatcoltini/leetcode-problems" target="_blank"> Leetcode Problems </a> </td>
-			</tr>
-		</table>
-		<br><br>
-		</p>
+			<h1> PROJECTS </h1>
+			<table id="PROJECT" class="PROJTBL">
+				<tr class="row_proj">
+					<th> TITLE </th>
+					<th> DESCRIPTION </th>
+					<th> LINK</th>
+				</tr>
+				<tr>
+					<td class="row-title"> STONEHEARTH EXPANDED</td>
+					<td> An all-purpose modification of one of my beloved games, Stonehearth. The mod is currently outdated,
+						but consists of an updated projectile system
+						by modifying the base game's LUA code, many new objects added to the game thanks to it's unique
+						moddability, and more. </td>
+					<td> <a href="https://github.com/greatcoltini/stonehearth_expanded" target="_blank" style="text-align: center"> Stonehearth
+							Expanded </a> </td>
+				</tr>
+				<tr>
+					<td class="row-title"> WEBSITE </td>
+					<td> A basic website containing information about myself, my career, my education, and my resume. </td>
+					<td> <a href="colton.html" target="_blank" style="text-align: center"> My Website </a> </td>
+				</tr>
+				<tr>
+					<td class="row-title"> WATERBILLING FIX </td>
+					<td> A simple python program editing data exported as a CSV file, and converting it into a different format so that
+					it is properly read into the program. </td>
+					<td> <a href="https://github.com/greatcoltini/water-billing-public" target="_blank" style="text-align: center"> Waterbilling Public </a> </td>
+				</tr>
+				<tr>
+					<td class="row-title"> WATERPLANT GUI </td>
+					<td> A python program that is designed to contain and manipulate important information with regards to water treatment plant operations." </td>
+					<td> <a href="https://github.com/greatcoltini/waterplant_gui" target="_blank" style="text-align: center"> Waterplant GUI </a> </td>
+				</tr>
+				<tr>
+					<td class="row-title"> LEETCODE PROBLEM SOLVING </td>
+					<td> A github repo containing my solutions to LeetCode problems, solving ~1 per day. </td>
+					<td> <a href="https://github.com/greatcoltini/leetcode-problems" target="_blank"> Leetcode Problems </a> </td>
+				</tr>
+			</table>
+			<br><br>
+			</p>
 
 
-	</div>
+		</div>
 
 
 
-	<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-	<link rel="stylesheet" href="github-calendar.css" />
+		<div class="github-grid-item">
+			<!-- GOES INTO BODY -->
+			<div class="center" id="gh" data-login="greatcoltini"></div>
+		</div>
 
-	<!-- Prepare a container for your calendar. -->
-	<div class="calendar" id="GITHUB">
-		<!-- Loading stuff -->
-		Loading the data just for you.
-	</div>
+		<div class="footer">
+			<footer>
+				
+				<div class="socials">
+					<a class="socials_links" href="https://github.com/greatcoltini" target="_blank">
+						<img class="image" src="githubicohov.png" alt="GitHub" style="height: 7%; width: 7%;">
+					</a>
+					<a class="socials_links" href="https://instagram.com/greatcoltini" target="_blank">
+						<img class="image" src="greyinstaico.png" alt="Instagram" style="height: 7%; width: 7%;">
+					</a>
+					<a class="socials_links" href="https://www.linkedin.com/in/colton-donkersgoed/" target="_blank">
+						<img class="image" src="greylinkedinico.png" alt="Indeed" style="height: 7%; width: 7%;">
+					</a>
+					<a class="socials_links" href="https://www.facebook.com/colton.donkersgoed" target="_blank">
+						<img class="image" src="greyfbico.png" alt="Facebook" style="height: 7%; width: 7%;">
+					</a>
 
-	<div class="footer">
-		<footer>
-			
-			<div class="socials">
-				<a class="socials_links" href="https://github.com/greatcoltini" target="_blank">
-					<img class="image" src="githubicohov.png" alt="GitHub" style="height: 7%; width: 7%;">
-				</a>
-				<a class="socials_links" href="https://instagram.com/greatcoltini" target="_blank">
-					<img class="image" src="greyinstaico.png" alt="Instagram" style="height: 7%; width: 7%;">
-				</a>
-				<a class="socials_links" href="https://www.linkedin.com/in/colton-donkersgoed/" target="_blank">
-					<img class="image" src="greylinkedinico.png" alt="Indeed" style="height: 7%; width: 7%;">
-				</a>
-				<a class="socials_links" href="https://www.facebook.com/colton.donkersgoed" target="_blank">
-					<img class="image" src="greyfbico.png" alt="Facebook" style="height: 7%; width: 7%;">
-				</a>
+					<a class="copyright-info"> © Colton Donkersgoed - 2022 </a>
 
-				<a class="copyright-info"> © Colton Donkersgoed - 2022 </a>
+				</div>
+				
+				<div class="date">
+					<a id="date"  style="margin:32vw"> </a>
+				</div>
+			</footer>
+		</div>
 
-			</div>
-			
-			<div class="date">
-				<a id="date"  style="margin:32vw"> </a>
-			</div>
-		</footer>
 	</div>
 
 	<script>
@@ -472,6 +476,10 @@
 		}
 
 	</script>
+
+	<!-- GOES INTO THE END OF BODY -->
+	<script src="http://lengthylyova.pythonanywhere.com/static/gh-contrib-graph/gh.js"></script>
+
 	
 	<script>
 	// date script

@@ -10,6 +10,15 @@
   <link href="style.css" rel="stylesheet">
 
   <style>
+
+    .navbar {
+      border-bottom: white;
+    }
+
+    .body {
+      background-color: grey !important;
+    }
+
     .mostbody {
       width: 80%;
       margin: auto;
@@ -39,7 +48,7 @@
     }
 
     .biography {
-      color: black;
+      color: white;
       font-weight: bold;
       margin-top: 10%;
       margin-left: 10%;
@@ -58,11 +67,66 @@
       max-width: inherit;
       max-height: inherit;
     }
+
+    @media only screen and (max-width: 799px){
+      .grid-container-profile {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .bio-grid-item {
+        grid-column: 1;
+        grid-row: 1;
+      }
+
+      .bio-about-item {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+      }
+
+      .self-portrait-item {
+        grid-column: 2;
+        grid-row: 1;
+        max-height: 350px;
+        margin-left: 0px;
+        margin-top: 5%;
+      }
+    }
+
+    @media only screen and (min-width: 800px){
+      .grid-container-profile {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      .bio-grid-item {
+        grid-column: 2;
+        grid-row: 1;
+      }
+
+      .bio-about-item {
+        grid-column: 3;
+        grid-row: 1;
+      }
+
+      .self-portrait-item {
+        grid-column: 1;
+        grid-row: 1;
+        max-height: 350px;
+        margin-left: 25%;
+        margin-top: 5%;
+      }
+
+      .name-header {
+        font-size: 250%;
+        font-weight: bolder;
+        text-decoration: underline;
+      }
+    }
   </style>
 
 </head>
 
-<body class="text-bg-light bkgrnd-img">
+<body class="text-bg-light bkgrnd-img" style=>
   <nav class="navbar navbar-expand-md me-auto sticky-top navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html"> <strong>COLTON DONKERSGOED</strong> </a>
@@ -100,7 +164,7 @@
 
     <div class="divider"></div>
 
-    <div class="container my-5">
+    <div class="container my-5 rounded text-bg-dark">
       <h1 class="border-bottom display-1"> ABOUT ME </h1>
 
       <div class="px-4 py-5 my-5 text-center grid-container-profile">
@@ -111,7 +175,7 @@
 
         <div class="bio-grid-item">
 
-          <h2 style="font-size: 250%; font-weight: bolder; text-decoration: underline"> Colton Donkersgoed </h2>
+          <h2 class="name-header"> Colton Donkersgoed </h2>
 
 
           <h3 class="bkg-db"> Software Programmer </h3>
@@ -123,13 +187,13 @@
         </div>
 
         <div class="bio-about-item">
-          <p class="biography"> A student of psychology, water treatment, and software development, Colton boasts a vast
+          <p class="biography"> A student of software development, water treatment, and psychology, Colton boasts a vast
             array of skills that help him
             with whatever problems he may encounter. From working in an on-call, 7 days a week, schedule, to juggling
             school and work,
             there is little that fazes him.
 
-            <br>
+            <br> <br> <br>
 
             In his off-time, Colton pursues a variety of activities from hobbyist game development, rock climbing,
             hiking, portaging (backcountry),

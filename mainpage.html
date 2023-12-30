@@ -8,11 +8,12 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <link href="style.css" rel="stylesheet">
+  
 
   <style>
 
     .navbar {
-      border-bottom: white;
+      border-bottom: grey 3px solid;
     }
 
     .body {
@@ -37,6 +38,7 @@
     .bio-about-item {
       grid-column: 3;
       grid-row: 1;
+      margin-left: -15%;
     }
 
     .self-portrait-item {
@@ -68,61 +70,14 @@
       max-height: inherit;
     }
 
-    @media only screen and (max-width: 799px){
-      .grid-container-profile {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .bio-grid-item {
-        grid-column: 1;
-        grid-row: 1;
-      }
-
-      .bio-about-item {
-        grid-column: 1 / span 2;
-        grid-row: 2;
-      }
-
-      .self-portrait-item {
-        grid-column: 2;
-        grid-row: 1;
-        max-height: 350px;
-        margin-left: 0px;
-        margin-top: 5%;
-      }
+    .github-grid-item {
+      max-width: 100%;
     }
 
-    @media only screen and (min-width: 800px){
-      .grid-container-profile {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-      }
 
-      .bio-grid-item {
-        grid-column: 2;
-        grid-row: 1;
-      }
-
-      .bio-about-item {
-        grid-column: 3;
-        grid-row: 1;
-      }
-
-      .self-portrait-item {
-        grid-column: 1;
-        grid-row: 1;
-        max-height: 350px;
-        margin-left: 25%;
-        margin-top: 5%;
-      }
-
-      .name-header {
-        font-size: 250%;
-        font-weight: bolder;
-        text-decoration: underline;
-      }
-    }
   </style>
+
+  <link href="css/mobile.css" rel="stylesheet">
 
 </head>
 
@@ -161,8 +116,6 @@
 
   <div class="mostbody">
 
-
-    <div class="divider"></div>
 
     <div class="container my-5 rounded text-bg-dark">
       <h1 class="border-bottom display-1"> ABOUT ME </h1>
@@ -203,8 +156,6 @@
 
       </div>
     </div>
-
-    <div class="divider"></div>
 
     <!-- <div class="container-fluid my-5">
       
@@ -257,7 +208,6 @@
           </div>
     </div> -->
 
-    <div class="divider"></div>
     <!-- WORK SECTION OF WEBPAGE-->
     <div id="WORK" class="container-fluid">
       <h1 class="display-5 fw-bold"></h1>
@@ -321,9 +271,6 @@
         </div>
       </div>
     </div>
-
-    <div class="divider"></div>
-    <div class="divider"></div>
 
 
     <!-- THE EDUCATION SECTION OF MY WEBPAGE -->
@@ -486,10 +433,6 @@
         </div>
       </div>
     </div>
-
-    <div class="divider"></div>
-    <div class="divider"></div>
-
 
     <!-- PROJECT SECTION -->
     <div id="PROJ" class="container-fluid my-5">
@@ -706,17 +649,14 @@
       </div>
     </div>
 
-    <div class="divider"></div>
-    <div class="divider"></div>
-
 
     <!--     GITHUB INFO SECTION & FOOTER-->
-    <div id="GIT" class="container-fluid">
+    <div id="GIT" class="container-fluid card">
 
       <div class="py-3 my-3  text-center">
-        <h1 class="display-5 fw-bold"> Github Contributions</h1>
+        <h1 class="fw-bold"> Github Contributions</h1>
         <div class="col-lg-6 mx-auto" style="width: 70vw;">
-          <div class="github-grid-item">
+          <div class="github-grid-item" style="">
             <img src="http://ghchart.rshah.org/greatcoltini" alt="Greatcoltini's Github chart" />
           </div>
         </div>

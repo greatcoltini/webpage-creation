@@ -68,7 +68,7 @@ h1 {
 }
 
 .slower {
-  transition: transform 5s ease-in-out;
+    transition: transform 5s ease-in-out;
 }
 
 .th {
@@ -76,8 +76,71 @@ h1 {
 }
 
 
-@media screen and (max-width:600px){
-    .hideOnSmall{
+@media screen and (max-width:600px) {
+    .hideOnSmall {
         display: none !important;
     }
+}
+
+
+.navbar {
+    border-bottom: grey 3px solid;
+}
+
+.body {
+    background-color: grey !important;
+}
+
+.mostbody {
+    width: 80%;
+    margin: auto;
+}
+
+.grid-container-profile {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.bio-grid-item {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.bio-about-item {
+    grid-column: 3;
+    grid-row: 1;
+    margin-left: -15%;
+}
+
+.self-portrait-item {
+    grid-column: 1;
+    grid-row: 1;
+    max-height: 350px;
+    margin-left: 25%;
+    margin-top: 5%;
+}
+
+.biography {
+    color: white;
+    font-weight: bold;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.bkg-lb {
+    background-color: #7EB2DD;
+}
+
+.bkg-db {
+    background-color: #445E93;
+}
+
+img {
+    object-fit: fill;
+    max-width: inherit;
+    max-height: inherit;
+}
+
+.github-grid-item {
+    max-width: 100%;
 }
